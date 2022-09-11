@@ -21,8 +21,10 @@ RUN apt-get install -y -q \
     unzip \
     zip
 
-CMD dpkg --purge \
+RUN apt-get remove -y -q \
+    default-jre-headless \
     gcc \
+    imagemagick-6-common \
     netcat \
     ssh \
     ufw
