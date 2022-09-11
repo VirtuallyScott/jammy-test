@@ -8,11 +8,11 @@ RUN apt-get update && \
  
 RUN apt-get install -y -q \
     apt-utils \
+    awscli \
     ca-certificates \
     ca-certificates-java \
     nginx \
     openjdk-11-jdk-headless \
-    python3-pip \
     tomcat9 \
     tzdata \
     unzip \
@@ -24,7 +24,6 @@ CMD dpkg --purge \
     ssh \
     ufw
 
-RUN apt clean autoclean && \
-    apt autoremove --yes && \
-    rm -rf /var/lib/{apt,dpkg,cache,log}/
-    
+#RUN apt clean autoclean && \
+#    apt autoremove --yes && \
+#    rm -rf /var/lib/{apt,dpkg,cache,log}/
