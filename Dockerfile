@@ -1,3 +1,6 @@
+# BUILT ARTIFACT CAN BE PULLED FROM Docker Hub
+# whereisnotnull/tests:0.0.1
+
 FROM ubuntu:jammy
  
 ENV DEBIAN_FRONTEND=noninteractive
