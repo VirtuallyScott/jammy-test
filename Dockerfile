@@ -1,5 +1,5 @@
 # BUILT ARTIFACT CAN BE PULLED FROM Docker Hub
-# whereisnotnull/tests:0.0.1
+# whereisnotnull/tests:0.0.3
 
 FROM ubuntu:jammy
  
@@ -14,6 +14,7 @@ RUN apt-get install -y -q \
     awscli \
     ca-certificates \
     ca-certificates-java \
+    libopenscap8 \
     nginx \
     openjdk-11-jdk-headless \
     tomcat9 \
